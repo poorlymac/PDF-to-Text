@@ -1,7 +1,7 @@
 #!/bin/bash
 POPPLER=0.72.0
+rm -rf poppler-$POPPLER*
 curl -O https://poppler.freedesktop.org/poppler-$POPPLER.tar.xz
-rm -rf poppler-$POPPLER
 tar -xf poppler-$POPPLER.tar.xz
 # Patch the CMakeLists.txt to do as mutch of a static compile as possible
 patch poppler-$POPPLER/CMakeLists.txt<<'EOF'
@@ -81,3 +81,12 @@ make pdftotext
 
 # Check what libraries are dynamically linked, want no /usr/local's
 otool -L utils/pdftotext
+echo "Check there are no /usr/local libraries linked"
+
+# Clean up
+mv utils/pdftotext ../..
+cd ../..
+rm -rf poppler-$POPPLER*
+
+# Open Platypus
+open -a "Platypus.app" "PDF to Text.platypus"
