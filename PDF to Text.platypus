@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AcceptsFiles</key>
-	<false/>
+	<true/>
 	<key>AcceptsText</key>
 	<false/>
 	<key>Authentication</key>
@@ -12,26 +12,26 @@
 	<string>Paul Schaap</string>
 	<key>BundledFiles</key>
 	<array>
-		<string>/Users/schaappa/Development/PDF-to-Text/poppler-0.72.0/build/utils/pdftotext</string>
+		<string>/Users/paulschaap/Development/PDF-to-Text/pdftotext</string>
 	</array>
 	<key>Creator</key>
 	<string>Platypus-5.3</string>
 	<key>DeclareService</key>
 	<false/>
 	<key>Destination</key>
-	<string>/Users/schaappa/Desktop/Application.app</string>
+	<string>/Users/paulschaap/Desktop/Application.app</string>
 	<key>DevelopmentVersion</key>
 	<false/>
 	<key>DocIconPath</key>
 	<string></string>
 	<key>Droppable</key>
-	<false/>
+	<true/>
 	<key>ExecutablePath</key>
 	<string>/usr/local/share/platypus/ScriptExec</string>
 	<key>IconPath</key>
-	<string>/Users/schaappa/Library/Application Support/Platypus/PlatypusIcon-36028.icns</string>
+	<string>/Users/paulschaap/Development/PDF-to-Text/PDF to Text.icns</string>
 	<key>Identifier</key>
-	<string>org.schaappa.PDFtoText</string>
+	<string>org.paulschaap.PDFToText</string>
 	<key>InterfaceType</key>
 	<string>Text Window</string>
 	<key>InterpreterArgs</key>
@@ -39,7 +39,7 @@
 	<key>InterpreterPath</key>
 	<string>/bin/bash</string>
 	<key>Name</key>
-	<string>PDF to Text</string>
+	<string>PDF To Text</string>
 	<key>NibPath</key>
 	<string>/usr/local/share/platypus/MainMenu.nib</string>
 	<key>OptimizeApplication</key>
@@ -55,7 +55,7 @@
 	<key>ScriptArgs</key>
 	<array/>
 	<key>ScriptPath</key>
-	<string>/Users/schaappa/Development/PDF-to-Text/PDF to Text.bash</string>
+	<string>/Users/paulschaap/Development/PDF-to-Text/PDF to Text.bash</string>
 	<key>StatusItemDisplayType</key>
 	<string>Text</string>
 	<key>StatusItemIcon</key>
@@ -249,8 +249,7 @@
 	<array/>
 	<key>UniformTypes</key>
 	<array>
-		<string>public.item</string>
-		<string>public.folder</string>
+		<string>com.adobe.pdf</string>
 	</array>
 	<key>Version</key>
 	<string>1.0</string>
