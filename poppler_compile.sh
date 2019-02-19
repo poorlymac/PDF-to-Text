@@ -1,12 +1,12 @@
 #!/bin/bash
-POPPLER=0.72.0
+POPPLER=0.74.0
 rm -rf poppler-$POPPLER*
 curl -O https://poppler.freedesktop.org/poppler-$POPPLER.tar.xz
 tar -xf poppler-$POPPLER.tar.xz
 # Patch the CMakeLists.txt to do as mutch of a static compile as possible
 patch poppler-$POPPLER/CMakeLists.txt<<'EOF'
---- poppler-0.72.0/CMakeLists.txt	2018-12-07 03:22:06.000000000 +1100
-+++ poppler-0.72.0_build/CMakeLists.txt	2019-01-06 13:51:15.000000000 +1100
+--- poppler-$POPPLER/CMakeLists.txt	2018-12-07 03:22:06.000000000 +1100
++++ poppler-$POPPLER_build/CMakeLists.txt	2019-01-06 13:51:15.000000000 +1100
 @@ -396,7 +396,8 @@
    poppler/Movie.cc
    poppler/Rendition.cc
