@@ -1,5 +1,5 @@
 #!/bin/bash
-POPPLER=0.74.0
+POPPLER=0.76.1
 rm -rf poppler-$POPPLER*
 curl -O https://poppler.freedesktop.org/poppler-$POPPLER.tar.xz
 tar -xf poppler-$POPPLER.tar.xz
